@@ -2,6 +2,7 @@ import React from 'react'
 import { createBrowserRouter } from 'react-router'
 import { toast } from 'react-toastify'
 import Layouts from '../outlets/Layouts'
+import Home from '../components/Home'
 
 
 const Routes = createBrowserRouter([
@@ -11,7 +12,7 @@ const Routes = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <div>Home</div>
+                element: <Home />
             },
             {
                 path: '*',

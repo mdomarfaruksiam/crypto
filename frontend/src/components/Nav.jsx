@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { FaUser, FaBars, FaTimes } from 'react-icons/fa'
 import { useNavigate } from 'react-router'
 
-
 import logo from '../../public/Logo.png'
 
 export default function Nav() {
@@ -38,7 +37,6 @@ export default function Nav() {
                 <div className='container mx-auto flex justify-between items-center p-4 relative'>
                     <img src={logo} alt='neer logo' className='h-10' />
 
-                    {/* Hamburger button (mobile only) */}
                     <button
                         className='text-white text-2xl sm:hidden cursor-pointer'
                         onClick={() => setMenuOpen(!menuOpen)}
@@ -46,9 +44,14 @@ export default function Nav() {
                         {menuOpen ? <FaTimes /> : <FaBars />}
                     </button>
 
-                    {/* Navigation menu */}
                     <ul
-                        className={`${menuOpen ? 'flex' : 'hidden'} flex-col absolute top-full left-0 w-full bg-[#141778] sm:flex sm:flex-row sm:static sm:w-auto sm:bg-transparent items-center sm:gap-4 text-white text-[16px] font-bold`}
+                        className={`
+                            flex flex-col absolute top-full left-0 w-full bg-[#757aad] sm:bg-none sm:p-0 p-2 sm:border-none border-2 border-[#000000]
+                            transition-all duration-300 ease-in-out overflow-hidden
+                            sm:flex-row sm:static sm:w-auto sm:bg-transparent sm:max-h-none sm:opacity-100 sm:overflow-visible
+                            items-center gap-2 sm:gap-4 text-white text-[16px] font-bold font-["lato"]
+                            ${menuOpen ? 'max-h-100 opacity-100' : 'max-h-0 opacity-0'}
+                        `}
                     >
                         {links.map((link, index) => {
                             const Icon = link.icon
@@ -57,7 +60,9 @@ export default function Nav() {
                                 <li
                                     key={index}
                                     onClick={(e) => updateActiveLink(e, index)}
-                                    className={`cursor-pointer w-full sm:w-auto text-center sm:text-left px-4 py-3 sm:p-0  ${link.active ? 'text-[#FFD700]' : 'text-white'} ${index % 2 === 0 ? 'bg-[#0f1260]  sm:bg-transparent' : ''} flex flex-col gap-1`}>
+                                    className={`cursor-pointer w-full sm:w-auto text-center sm:text-left px-4 py-3 sm:p-0 sm:rounded-0 rounded-lg ${link.active ? 'text-[#FFD700]' : 'text-white'
+                                        } flex flex-col gap-1`}
+                                >
                                     {Icon ? <Icon className='mx-auto sm:mx-0' /> : link.text}
                                     <span className={`${link.active ? 'border border-[#FFD700]' : 'hidden'}`} />
                                 </li>
@@ -68,4 +73,4 @@ export default function Nav() {
             </nav>
         </header>
     )
-}
+}         
