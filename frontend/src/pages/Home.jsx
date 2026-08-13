@@ -1,8 +1,10 @@
 import React from 'react'
 
-import HeaderMain from './HeaderMain'
+import HeaderMain from '../components/HeaderMain'
 import header from '../../public/Header.png'
-import OurExperties from './OurExperties'
+import OurExperties from '../components/OurExperties'
+import Differences from '../components/Differences'
+import InfoCart from '../components/InfoCart'
 
 export default function Home() {
     return (
@@ -14,6 +16,8 @@ export default function Home() {
                 <HeaderMain />
             </div>
             <OurExperties />
+            <Differences />
+            <InfoCart />
         </main>
     )
 }

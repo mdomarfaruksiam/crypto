@@ -2,7 +2,7 @@ import React from 'react'
 import { createBrowserRouter } from 'react-router'
 import { toast } from 'react-toastify'
 import Layouts from '../outlets/Layouts'
-import Home from '../components/Home'
+import Home from '../pages/Home'
 
 
 const Routes = createBrowserRouter([
