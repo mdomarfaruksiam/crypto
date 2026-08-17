@@ -15,6 +15,7 @@ export default function Nav() {
         { text: "Services", href: "/services" },
         { text: "Pages", href: "/pages" },
         { text: "Blog", href: "/blog" },
+        { text: "FAQ", href: "/faq" },
         { text: "Contact Us", href: "/contact-us" },
         { icon: FaUser, href: "/profile" },
     ];

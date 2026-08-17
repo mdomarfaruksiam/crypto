@@ -7,7 +7,7 @@ import AppIcons from './AppIcons'
 
 export default function MarketReporterApp() {
     return (
-        <section className='container mx-auto p-2 py-20 flex flex-col items-center gap-20'>
+        <section className='container mx-auto p-2 py-20 flex flex-col items-center gap-20 relative'>
             <div className=' flex flex-col items-center gap-10'>
                 <h1 className='font-bold text-[34px] text-black text-center'>Market Reporter App</h1>
                 <p className='font-["lato"] text-center text-[#727272]'>Phasellus sodales est id sapien condimentum sagittis. Vivamus eget lorem augue. Nunc ut diam tellus. Fusce mattis luctus sem, sollicitudin tincidunt ante ullamcorper non. Ut feugiat dictum consequat. Aenean varius, augue malesuada eleifend faucibus</p>
@@ -50,6 +50,23 @@ export default function MarketReporterApp() {
                 <button className='bg-[#FF6F33] p-4 px-8 rounded-4xl font-semibold text-sm text-white'>
                     Get Free Trial App
                 </button>
+            </div>
+
+            <div className='flex gap-2 justify-between items-center bg-[#2A2AFF] rounded-lg p-2 absolute -bottom-20 mr-4'>
+                <div className='flex items-center justify-center flex-col text-wrap text-center'>
+                    <h2 className='text-[32px] font-bold text-white'>2.0 bn</h2>
+                    <p className='font-bold font-["lato"] text-[#C9B5E5] p-2'>Daily volume of currency</p>
+                </div>
+                <span className='h-20 w-1 bg-[white]' />
+                <div className='flex items-center justify-center flex-col text-wrap text-center'>
+                    <h2 className='text-[32px] font-bold text-white'>2.0 bn</h2>
+                    <p className='font-bold font-["lato"] text-[#C9B5E5] p-2'>Daily volume of currency</p>
+                </div>
+                <span className='h-20 w-1 bg-[white]' />
+                <div className='flex items-center justify-center flex-col text-wrap text-center'>
+                    <h2 className='text-[32px] font-bold text-white'>2.0 bn</h2>
+                    <p className='font-bold font-["lato"] text-[#C9B5E5] p-2'>Daily volume of currency</p>
+                </div>
             </div>
         </section>
     )

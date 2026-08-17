@@ -3,7 +3,9 @@ import { createBrowserRouter } from 'react-router'
 import { toast } from 'react-toastify'
 import Layouts from '../outlets/Layouts'
 import Home from '../pages/Home'
-import ErrorPage from '../components/ErrorPage'
+import ErrorPage from '../pages/ErrorPage'
+import Contact from '../pages/Contact'
+import FAQ from '../pages/FAQ'
 
 
 const Routes = createBrowserRouter([
@@ -14,6 +16,14 @@ const Routes = createBrowserRouter([
             {
                 index: true,
                 element: <Home />
+            },
+            {
+                path: 'contact-us',
+                element: <Contact />
+            },
+            {
+                path: 'faq',
+                element: <FAQ />
             },
             {
                 path: '*',

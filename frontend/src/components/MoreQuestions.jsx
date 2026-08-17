@@ -23,7 +23,7 @@ export default function MoreQuestions() {
         <div className='p-2 pt-20 flex gap-4 items-center'>
             <div className='w-full'>
                 <h1 className='font-bold text-[42px] text-[#1920E0]'>
-                    Need More Answers?
+                    Somemore Questions
                 </h1>
                 <div className='flex flex-col gap-5 mt-8 m-2'>
                     {question.map((q, i) => (
@@ -41,22 +41,7 @@ export default function MoreQuestions() {
                     ))}
                 </div>
                 <button className='p-2 bg-[red] rounded-2xl px-4 font-bold my-4 text-white'>Read more</button>
-                <div className='flex gap-2 justify-between items-center bg-[#2A2AFF] rounded-lg p-2 absolute -top-10 mr-4'>
-                    <div className='flex items-center justify-center flex-col text-wrap text-center'>
-                        <h2 className='text-[32px] font-bold text-white'>2.0 bn</h2>
-                        <p className='font-bold font-["lato"] text-[#C9B5E5] p-2'>Daily volume of currency</p>
-                    </div>
-                    <span className='h-20 w-1 bg-[white]' />
-                    <div className='flex items-center justify-center flex-col text-wrap text-center'>
-                        <h2 className='text-[32px] font-bold text-white'>2.0 bn</h2>
-                        <p className='font-bold font-["lato"] text-[#C9B5E5] p-2'>Daily volume of currency</p>
-                    </div>
-                    <span className='h-20 w-1 bg-[white]' />
-                    <div className='flex items-center justify-center flex-col text-wrap text-center'>
-                        <h2 className='text-[32px] font-bold text-white'>2.0 bn</h2>
-                        <p className='font-bold font-["lato"] text-[#C9B5E5] p-2'>Daily volume of currency</p>
-                    </div>
-                </div>
+
             </div>
             <div
                 className="w-full hidden md:block "

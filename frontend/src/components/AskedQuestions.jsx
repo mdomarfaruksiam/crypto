@@ -149,7 +149,7 @@ export default function AskedQuestions() {
     }
 
     return (
-        <section className="container mx-auto p-2 py-40 flex flex-col justify-between gap-8 items-center relative">
+        <section className="container mx-auto p-2 py-20 sm:py-40 flex flex-col justify-between gap-8 items-center relative">
             <div>
                 <h1 className="font-bold text-[34px] text-black text-center">
                     Frequently Asked Questions
