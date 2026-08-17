@@ -5,6 +5,8 @@ import header from '../../public/Header.png'
 import OurExperties from '../components/OurExperties'
 import Differences from '../components/Differences'
 import InfoCart from '../components/InfoCart'
+import AskedQuestions from '../components/AskedQuestions'
+import Subscription from '../components/Subscription'
 
 export default function Home() {
     return (
@@ -18,6 +20,8 @@ export default function Home() {
             <OurExperties />
             <Differences />
             <InfoCart />
+            <AskedQuestions />
+            <Subscription />
         </main>
     )
 }
