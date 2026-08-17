@@ -26,7 +26,7 @@ export default function Nav() {
     };
 
     return (
-        <header>
+        <header className="relative z-20">
             <nav className="bg-[#141778]">
                 <div className="container mx-auto flex justify-between items-center p-4 relative">
                     <img
