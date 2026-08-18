@@ -4,7 +4,7 @@ import Button from '../utils/Button'
 
 export default function MessageQuestion() {
     return (
-        <div className='container m-auto py-20'>
+        <div className='container m-auto pb-20 p-2'>
             <h1 className='font-bold text-[42px] text-[#1920E0]'>Need More Answers?</h1>
             <form
                 className='grid grid-cols-2 gap-4 py-4 p-2 md:w-1/2'>

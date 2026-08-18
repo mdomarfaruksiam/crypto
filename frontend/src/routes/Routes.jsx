@@ -6,6 +6,7 @@ import Home from '../pages/Home'
 import ErrorPage from '../pages/ErrorPage'
 import Contact from '../pages/Contact'
 import FAQ from '../pages/FAQ'
+import Cases from '../pages/Cases'
 
 
 const Routes = createBrowserRouter([
@@ -24,6 +25,10 @@ const Routes = createBrowserRouter([
             {
                 path: 'faq',
                 element: <FAQ />
+            },
+            {
+                path: 'our-cases',
+                element: <Cases />
             },
             {
                 path: '*',
