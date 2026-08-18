@@ -10,7 +10,7 @@ export default function Cases() {
             <PagePath path={'Our Cases'} />
             <CryptoExchange />
             <RecenterProjects />
-            <div className='bg-[#F2F2FF] py-10'>
+            <div className='bg-[#F2F2FF]'>
                 <Suggestions />
             </div>
         </main>
