@@ -11,6 +11,7 @@ import Contact from '../pages/Contact'
 import FAQ from '../pages/FAQ'
 import Cases from '../pages/Cases'
 import Blog from '../pages/Blog'
+import Prices from '../pages/Prices'
 
 
 const Routes = createBrowserRouter([
@@ -37,6 +38,10 @@ const Routes = createBrowserRouter([
             {
                 path: 'blog',
                 element: <Blog />
+            },
+            {
+                path: 'prices',
+                element: <Prices />
             },
             {
                 path: '*',

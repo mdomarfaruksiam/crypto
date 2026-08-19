@@ -11,9 +11,7 @@ export default function Nav() {
 
     const links = [
         { text: "Home", href: "/" },
-        { text: "About Us", href: "/about-us" },
-        { text: "Services", href: "/services" },
-        { text: "Pages", href: "/pages" },
+        { text: "Prices", href: "/prices" },
         { text: "Blog", href: "/blog" },
         { text: "Cases", href: "/our-cases" },
         { text: "FAQ", href: "/faq" },

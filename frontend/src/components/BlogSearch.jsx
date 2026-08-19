@@ -21,7 +21,7 @@ export default function BlogSearch() {
                     label={<FaSearch />}
                     className='bg-transparent text-[#1920E0]' />
             </div>
-            <div className='space-y-6 pt-10 md:flex hidden'>
+            <div className='space-y-6 pt-10 md:block hidden'>
                 <h1 className='font-bold'>Recent Posts:</h1>
                 <div className='flex items-center gap-4 border-b-2 border-[#E9E9E9] py-4'>
                     <img className='w-20 h-auto' src={ImgPlaceholder} alt="" />

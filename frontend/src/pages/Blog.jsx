@@ -22,6 +22,11 @@ export default function Blog() {
 
                 <div className='flex flex-col justify-center items-center gap-4 w-[80%] mx-auto md:order-1 order-2'>
                     <BlogPost />
+                    <BlogPost />
+                    <BlogPost />
+                    <BlogPost />
+                    <BlogPost />
+                    <BlogPost />
                 </div>
                 <BlogSearch />
             </div>
